@@ -5,7 +5,8 @@ void ofApp::setup(){
 //
     ofSetBackgroundAuto(false);
     ofBackground(0);
-    ofSetLineWidth(ofRandom(0,30));
+    ofSetLineWidth(ofRandom(0,20));
+  
     ofEnableAlphaBlending();
 
 }
@@ -55,19 +56,19 @@ void ofApp::draw(){
 //            ofSetColor(inBetween);
 //            ofDrawCircle(ofGetMouseX()+xOffset, ofGetMouseY()+yOffset, radius);}
          
-             int numLines = 300;
-             int minRadius = 10;
-             int maxRadius = 200;
+             int numLines = 30;
+             int minRadius = 1;
+             int maxRadius = 20;
              for (int i=0; i<numLines; i++) {
              float angle = ofRandom(ofDegToRad(360.0));
              float distance = ofRandom(minRadius, maxRadius);
              float xOffset = cos(angle) * distance;
              float yOffset = sin(angle) * distance;
-             float alpha = ofMap(distance, minRadius, maxRadius, 55, 0);  // Make shorter lines more opaque
-             ofColor myColor1(125, 10, 200);
-             ofColor myColor2(202, 180, 89);
-             ofColor inBetween = myColor1.getLerped(myColor2, ofRandom(20.0));
-             ofSetColor(inBetween, alpha);
+                 int alpha = ofRandom(0, 255);
+             ofColor myColor1(125, 100, 200);
+             ofColor myColor2(200, 170, 190);
+             ofColor inBetween = myColor1.getLerped(myColor2, ofRandom(5.0));
+             ofSetColor(inBetween, 10);
              ofDrawLine(ofGetMouseX(), ofGetMouseY(), ofGetMouseX()+xOffset, ofGetMouseY()+yOffset);
          }
 

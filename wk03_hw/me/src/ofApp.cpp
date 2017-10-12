@@ -6,7 +6,7 @@ int yPos = 0;
 
 
 
-//--------------------------------------------------------------
+//-------------------------------------------------------------
 void ofApp::setup(){
     me.load("images/me.jpg");
     ofSetBackgroundAuto(false);
@@ -26,11 +26,13 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    me.draw(xPos,yPos);
+   
     
 //    float xPos = ofMap(sin(ofGetElapsedTimef()), -1, 1, 0, ofGetWidth());
 //    ofRect(xPos, ofGetMouseX(), 10,10);
 //    ofSetColor(20, 80, 90);
+    
+    me.draw(ofGetMouseX(), ofGetMouseY());
     
     ofDrawCircle(ofGetMouseX(), ofGetMouseY(), 10);
     ofColor myRed1(180, 16, 250, 50);

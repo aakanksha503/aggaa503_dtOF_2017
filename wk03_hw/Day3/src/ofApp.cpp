@@ -26,6 +26,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     ofDrawCircle(pos, 10);
+    
     ofSetColor(ofRandom(255), ofRandom(100), ofRandom(200));
     
     ofSetLineWidth(ofRandom(10));
