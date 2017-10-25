@@ -9,6 +9,43 @@
 		<string>46</string>
 		<key>objects</key>
 		<dict>
+			<key>047E50C7AA03CA5F636C7F15</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>Brush1.hpp</string>
+				<key>path</key>
+				<string>src/Brush1.hpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>54AAC6407E9DC8007D4FD831</key>
+			<dict>
+				<key>fileRef</key>
+				<string>238C7157A2BF10D771332DDD</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>238C7157A2BF10D771332DDD</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>30</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>Brush1.cpp</string>
+				<key>path</key>
+				<string>src/Brush1.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
 			<key>6948EE371B920CB800B5AC1A</key>
 			<dict>
 				<key>children</key>
@@ -40,7 +77,7 @@
 				<key>name</key>
 				<string>openFrameworksLib.xcodeproj</string>
 				<key>path</key>
-				<string>../../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj</string>
+				<string>../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -173,6 +210,11 @@
 				<string>E4EB6923138AFD0F00A09F29</string>
 				<key>buildSettings</key>
 				<dict>
+					<key>HEADER_SEARCH_PATHS</key>
+					<array>
+						<string>$(OF_CORE_HEADERS)</string>
+						<string>src</string>
+					</array>
 					<key>CONFIGURATION_BUILD_DIR</key>
 					<string>$(SRCROOT)/bin/</string>
 					<key>COPY_PHASE_STRIP</key>
@@ -226,6 +268,11 @@
 				<string>E4EB6923138AFD0F00A09F29</string>
 				<key>buildSettings</key>
 				<dict>
+					<key>HEADER_SEARCH_PATHS</key>
+					<array>
+						<string>$(OF_CORE_HEADERS)</string>
+						<string>src</string>
+					</array>
 					<key>CONFIGURATION_BUILD_DIR</key>
 					<string>$(SRCROOT)/bin/</string>
 					<key>COPY_PHASE_STRIP</key>
@@ -281,6 +328,7 @@
 				<array>
 					<string>E4B69E200A3A1BDC003C02F2</string>
 					<string>E4B69E210A3A1BDC003C02F2</string>
+					<string>54AAC6407E9DC8007D4FD831</string>
 				</array>
 				<key>isa</key>
 				<string>PBXSourcesBuildPhase</string>
@@ -320,7 +368,7 @@
 				<key>isa</key>
 				<string>PBXNativeTarget</string>
 				<key>name</key>
-				<string>sketch1</string>
+				<string>midterm doodle board</string>
 				<key>productName</key>
 				<string>myOFApp</string>
 				<key>productReference</key>
@@ -337,7 +385,7 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>path</key>
-				<string>sketch1Debug.app</string>
+				<string>midterm doodle boardDebug.app</string>
 				<key>sourceTree</key>
 				<string>BUILT_PRODUCTS_DIR</string>
 			</dict>
@@ -361,6 +409,11 @@
 				<string>E4EB6923138AFD0F00A09F29</string>
 				<key>buildSettings</key>
 				<dict>
+					<key>HEADER_SEARCH_PATHS</key>
+					<array>
+						<string>$(OF_CORE_HEADERS)</string>
+						<string>src</string>
+					</array>
 					<key>COMBINE_HIDPI_IMAGES</key>
 					<string>YES</string>
 					<key>COPY_PHASE_STRIP</key>
@@ -371,7 +424,7 @@
 						<string>$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)</string>
 					</array>
 					<key>FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1</key>
-					<string>"$(SRCROOT)/../../../../libs/glut/lib/osx"</string>
+					<string>"$(SRCROOT)/../../../libs/glut/lib/osx"</string>
 					<key>GCC_DYNAMIC_NO_PIC</key>
 					<string>NO</string>
 					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
@@ -404,6 +457,11 @@
 				<string>E4EB6923138AFD0F00A09F29</string>
 				<key>buildSettings</key>
 				<dict>
+					<key>HEADER_SEARCH_PATHS</key>
+					<array>
+						<string>$(OF_CORE_HEADERS)</string>
+						<string>src</string>
+					</array>
 					<key>COMBINE_HIDPI_IMAGES</key>
 					<string>YES</string>
 					<key>COPY_PHASE_STRIP</key>
@@ -414,7 +472,7 @@
 						<string>$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)</string>
 					</array>
 					<key>FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1</key>
-					<string>"$(SRCROOT)/../../../../libs/glut/lib/osx"</string>
+					<string>"$(SRCROOT)/../../../libs/glut/lib/osx"</string>
 					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
 					<string>YES</string>
 					<key>GCC_MODEL_TUNING</key>
@@ -448,6 +506,8 @@
 					<string>E4B69E1D0A3A1BDC003C02F2</string>
 					<string>E4B69E1E0A3A1BDC003C02F2</string>
 					<string>E4B69E1F0A3A1BDC003C02F2</string>
+					<string>238C7157A2BF10D771332DDD</string>
+					<string>047E50C7AA03CA5F636C7F15</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -549,10 +609,10 @@
 # Copy default icon file into App/Resources
 rsync -aved "$ICON_FILE" "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/"
 # Copy libfmod and change install directory for fmod to run
-rsync -aved ../../../../libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/";
+rsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/";
 install_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";
 # Copy GLUT framework (must remove for AppStore submissions)
-rsync -aved ../../../../libs/glut/lib/osx/GLUT.framework "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/"
+rsync -aved ../../../libs/glut/lib/osx/GLUT.framework "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/"
 </string>
 			</dict>
 			<key>E4C2427710CC5ABF004149E2</key>
@@ -581,7 +641,7 @@ rsync -aved ../../../../libs/glut/lib/osx/GLUT.framework "$TARGET_BUILD_DIR/$PRO
 				<key>name</key>
 				<string>CoreOF.xcconfig</string>
 				<key>path</key>
-				<string>../../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig</string>
+				<string>../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>

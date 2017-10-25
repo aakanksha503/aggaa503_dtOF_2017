@@ -25,9 +25,9 @@ public:
     particle();
     virtual ~particle(){};
 
-    int r = ofRandom(180, 190);
-    int b = ofRandom(90, 100);
-    int g = ofRandom(110,120);
+    int r = ofRandom(100, 190);
+    int b = ofRandom(60, 100);
+    int g = ofRandom(80,120);
     
     int alpha = ofRandom(0, 255);
     

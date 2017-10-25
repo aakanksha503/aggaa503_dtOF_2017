@@ -54,6 +54,8 @@ void particle::update(){
 
 //------------------------------------------------------------
 void particle::draw(){
+    ofPushStyle();
     ofSetColor(r,g,b,alpha);
     ofDrawCircle(pos.x, pos.y, ofRandom(0,2));
+    ofPopStyle();
 }

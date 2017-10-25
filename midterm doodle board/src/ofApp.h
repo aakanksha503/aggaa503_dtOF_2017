@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "Brush1.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -20,6 +21,7 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
     ofPolyline straightSegmentPolyline;
     ofPolyline curvedSegmentPolyline;
     ofPolyline closedShapePolyline;
@@ -29,5 +31,12 @@ class ofApp : public ofBaseApp{
     float minDistance;
     vector <ofPolyline> polylines;
     int r,g, b;
+
+//        brush1 brusha;
+        ofImage night;
+        ofImage tree;
+    
+//    bool ofbgBackground;
+     
 		
 };
