@@ -7,9 +7,11 @@ int g = (30,180, 160);
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+   Avenir.load("Avenir.ttc", 12);
+    
     ofSetBackgroundAuto(false);
     ofBackground(0);
-    night.load("images/night.jpg");
+    boy.load("images/boy.jpg");
     tree.load("images/tree.jpg");
     minDistance = 10;
     LeftMouseButtonPressed=false;
@@ -41,39 +43,42 @@ void ofApp::draw(){
 ////    }
 //    
     //Brush 1 sparkly star
-//    ofBackground(0);
-//    ofColor r;
-//    ofColor b;
-//    ofColor p = b.getLerped(r, 10);
-//    
-//    ofSetColor(p);
-//    for (int i=0; i<polylines.size(); i++) {
-//        ofPolyline polyline = polylines[i];
-//        polyline.draw();
-//        vector<ofVec3f> vertices = polyline.getVertices();
-//        for (int vertexIndex=0; vertexIndex<vertices.size(); vertexIndex++) {
-//            ofVec3f vertex = vertices[vertexIndex];  // ofVec3f is like ofVec2f, but with a third dimension, z
-//            ofDrawCircle(vertex, ofRandom(0,4));
-//            ofDrawCircle(vertex+10, ofRandom(0, 2));
-//            ofDrawCircle(vertex+20, ofRandom(1,2));
-//            ofDrawCircle(vertex+30, ofRandom(0,3));
-//        }
-//    }
-//    
-//    
-//    ofSetLineWidth(ofRandom((1,2)));
-//    currentPolyline.draw();
-//    straightSegmentPolyline.draw();
+    ofBackground(0);
+    ofColor r;
+    ofColor b;
+    ofColor p = b.getLerped(r, 10);
+    
+    ofSetColor(p);
+    for (int i=0; i<polylines.size(); i++) {
+        ofPolyline polyline = polylines[i];
+        polyline.draw();
+        vector<ofVec3f> vertices = polyline.getVertices();
+        for (int vertexIndex=0; vertexIndex<vertices.size(); vertexIndex++) {
+            ofVec3f vertex = vertices[vertexIndex];  // ofVec3f is like ofVec2f, but with a third dimension, z
+            ofDrawCircle(vertex, ofRandom(0,4));
+            ofDrawCircle(vertex+10, ofRandom(0, 2));
+            ofDrawCircle(vertex+20, ofRandom(1,2));
+            ofDrawCircle(vertex+30, ofRandom(0,3));
+        }
+    }
+    
+    
+    ofSetLineWidth(ofRandom((1,2)));
+    currentPolyline.draw();
+    straightSegmentPolyline.draw();
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     //different scenes background
     if (key == 'a')
-   {night.draw(0,0, 1024, 768);}
-    
-    if (key == 'b')
-    {tree.draw(0,0, 1024, 768);}
+   {boy.draw(0,0, 1000, 500);
+       introString =	"Hi. This is Ted. Will you help him complete his drawing? Press Y to continue or N to terminate";"\n";
+       ofSetHexColor(0xffffff);
+       Avenir.drawString(introString, 20, 30);}
+
+    if (key == 'y')
+    {tree.draw(0,0);}
 }
 
 //--------------------------------------------------------------
@@ -93,7 +98,8 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    if (button == OF_MOUSE_BUTTON_LEFT) {
+    
+  if (button == OF_MOUSE_BUTTON_LEFT) {
         
         LeftMouseButtonPressed = true;
         currentPolyline.curveTo(x, y);

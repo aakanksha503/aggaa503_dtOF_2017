@@ -35,7 +35,9 @@ class ofApp : public ofBaseApp{
 //        brush1 brusha;
         ofImage night;
         ofImage tree;
-    
+        ofImage boy;
+        ofTrueTypeFont 	Avenir;
+        string introString;
 //    bool ofbgBackground;
      
 		
