@@ -20,7 +20,6 @@ void ofApp::setup(){
     
     gravity = ofVec2f(0.00001,ofRandom(0,0.0002));
     
-    float timeDiff = ofGetElapsedTimef() - lastUpdateTime;
 
 }
 
@@ -36,11 +35,19 @@ void ofApp::update(){
         }
     }
     
+    
+    float timeDiff = ofGetElapsedTimef() - lastUpdateTime;
+
     for (int i=0; i<systems.size(); i++)
     {
         systems[i].update(gravity, timeDiff);	// update
 
-    }}
+    }
+    
+    lastUpdateTime = ofGetElapsedTimef();
+    
+    
+}
 
 //--------------------------------------------------------------
 void ofApp::draw(){
@@ -89,13 +96,15 @@ void ofApp::draw(){
         ofVec3f vertex = vertices[vertexIndex];  // ofVec3f is like ofVec2f, but with a third dimension,
 			
 			if (brush == 1)
-			{
-				brush1.draw(vertex);	// draw the Brush1 pattern at this position
+			{   cam1.begin();
+				brush1.draw(vertex);
+                cam1.begin();// draw the Brush1 pattern at this position
 			}
             
 			else if (brush == 2)
-			{
+            {   cam.begin();
                 brush2.draw(vertex);
+                cam.end();
             }
             
             else if (brush == 3)

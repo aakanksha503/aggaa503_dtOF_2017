@@ -23,6 +23,7 @@ class ofApp : public ofBaseApp{
     ofVec2f pos;
     ofVec2f noisePos;
     ofImage flower;
+    ofEasyCam cam;
 
   
 		

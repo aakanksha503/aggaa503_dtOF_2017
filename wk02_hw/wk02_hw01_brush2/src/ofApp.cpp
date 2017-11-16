@@ -61,9 +61,6 @@ void ofApp::draw(){
     
     ofSetColor(inBetween, alpha);
     ofDrawTriangle(p1, p2, p3);
-   
-    
-
 }
 
 //--------------------------------------------------------------

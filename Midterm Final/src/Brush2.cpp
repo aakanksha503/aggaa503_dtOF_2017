@@ -17,4 +17,6 @@ void Brush2::draw(ofVec3f pos)
         ofPopStyle();	// always call this after ofPushStyle()
         // to go back to previous settings
         
+        ofEasyCam cam;
+        
     };

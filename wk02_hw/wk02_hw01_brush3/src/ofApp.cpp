@@ -28,12 +28,13 @@ void ofApp::draw(){
              float distance = ofRandom(minRadius, maxRadius);
              float xOffset = cos(angle) * distance;
              float yOffset = sin(angle) * distance;
-                 int alpha = ofRandom(0, 255);
+             int alpha = ofRandom(0, 255);
              ofColor myColor1(125, 100, 200);
              ofColor myColor2(200, 170, 190);
              ofColor inBetween = myColor1.getLerped(myColor2, ofRandom(5.0));
              ofSetColor(inBetween, 1);
              ofDrawLine(ofGetMouseX(), ofGetMouseY(), ofGetMouseX()+xOffset, ofGetMouseY()+yOffset);
+   
          }
 
 }

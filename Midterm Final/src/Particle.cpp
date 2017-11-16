@@ -25,7 +25,6 @@ void Particle::update(float timeDiff){ // how much time has passed since last fr
     acc *= 0;
     
     
-    
 }
 
 void Particle::draw(){

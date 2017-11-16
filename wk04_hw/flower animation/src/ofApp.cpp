@@ -55,7 +55,8 @@ void ofApp::draw(){
 //    ofDrawCircle(noisePos,2);
 //    ofDrawCircle(noisePos/2,2);
   
-
+//    cam.begin();
+    
     ofDrawCircle(noisePos/2,2);
     ofDrawCircle(noisePos/3,2);
     ofDrawCircle(noisePos/4,4);
@@ -91,7 +92,10 @@ void ofApp::draw(){
     for(i=0; i<50000; i++){
         ofDrawCircle(ofGetMouseX()*i/100+600, ofGetMouseY()*i/100+600, radius*i/10000);}
     for(i=0; i<50000; i++){
-        ofDrawCircle(ofGetMouseX()*i/100+700, ofGetMouseY()*i/100+700, radius*i/10000);}}
+        ofDrawCircle(ofGetMouseX()*i/100+700, ofGetMouseY()*i/100+700, radius*i/10000);}
+
+//    cam.end();
+}
 
 //        if (ofGetMousePressed(OF_MOUSE_BUTTON_LEFT)) {
 //            int numLines = 10;

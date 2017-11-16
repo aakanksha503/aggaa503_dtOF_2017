@@ -26,5 +26,4 @@ class ofApp : public ofBaseApp{
     float minDistance;
     vector <ofPolyline> polylines;
     int alpha;
-		
 };

@@ -3,7 +3,8 @@
 ParticleSystem::ParticleSystem(ofVec3f _pos){
 	pos.x = ofGetMouseX()*sin(ofGetElapsedTimef());
     pos.y = ofGetMouseY()*cos(ofGetElapsedTimef());
-    pos = _pos;}
+    pos = _pos;
+}
 
 void ParticleSystem::update(ofVec3f force, float timeDiff){ // time
 	

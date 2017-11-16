@@ -4,7 +4,7 @@
 void ofApp::setup(){
     
     minDistance = 1;
-    ofBackground(255);
+    ofBackground(0);
     leftMouseButtonPressed = false;
     ofSetBackgroundAuto(false);
 
@@ -28,7 +28,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-   
+ 
         for (int i=0; i<polylines.size(); i++) {
         ofPolyline polyline = polylines[i];
          
@@ -42,6 +42,7 @@ void ofApp::draw(){
     ofSetColor(inBetween, alpha);
     alpha++;
     currentPolyline.draw();
+
 }
 
 //--------------------------------------------------------------

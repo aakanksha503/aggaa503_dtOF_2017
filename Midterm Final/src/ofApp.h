@@ -72,9 +72,12 @@ class ofApp : public ofBaseApp{
     
     //brush 4
     float lastUpdateTime;
-    float timeDiff;
     vector<ParticleSystem> systems;
     ofVec3f gravity;
+    
+    ofEasyCam cam;
+    
+    ofEasyCam cam1;
     
     
 };
