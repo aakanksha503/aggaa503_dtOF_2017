@@ -1,20 +1,12 @@
-/* Have an explosion of particles by clicking on the screen. */
 #include "ofApp.h"
-int a=255;
-int b= 110;
-int c= 45;
-
 //--------------------------------------------------------------
 void ofApp::setup(){
-//    ofBackground(a,b,c);
+ 
 
-     night.load("images/night.jpg");
-    
+    night.load("images/night.jpg");
     
     
     ofSetVerticalSync(true);
-    ofSetBackgroundAuto(false);
-    ofSetFrameRate(ofRandom(50, 200));
     float vx = ofRandom(-2,2);
     float vy = ofRandom(-2,2);
     

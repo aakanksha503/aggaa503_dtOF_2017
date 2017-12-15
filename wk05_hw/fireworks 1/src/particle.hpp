@@ -1,10 +1,3 @@
-//
-//  particle.hpp
-//  trial
-//
-//  Created by Aditya Aggarwal on 12/10/2017.
-//
-//
 
 #ifndef particle_hpp
 #define particle_hpp
@@ -20,16 +13,16 @@ class particle
 public:
     ofVec2f pos;
     ofVec2f vel;
-    ofVec2f frc;   // frc is also know as acceleration (newton says "f=ma")
+    ofVec2f frc;
     
     particle();
     virtual ~particle(){};
 
-    int r = ofRandom(100, 190);
-    int b = ofRandom(60, 100);
-    int g = ofRandom(80,120);
+    int r = ofRandom(120, 160);
+    int b = ofRandom(50, 90);
+    int g = ofRandom(90, 100);
     
-    int alpha = ofRandom(0, 255);
+    int alpha = 255;
     
     void resetForce();
     void addForce(float x, float y);
@@ -39,7 +32,4 @@ public:
     void draw();
     
     float damping;
-    
-protected:
-private:
 };

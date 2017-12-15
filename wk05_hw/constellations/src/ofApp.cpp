@@ -46,12 +46,15 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    
+    cam.begin();
     ofSetColor(0);
     
         for (int i = 0; i < particles.size(); i++){
            
             particles[i].draw();
                         }
+    cam.end();
     }
 
 

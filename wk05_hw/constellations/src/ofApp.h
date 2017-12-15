@@ -10,6 +10,8 @@
         void draw();
         void mousePressed(int x, int y, int button);
         
+        ofEasyCam cam;
+        
         // let's make a vector of them
         vector <particle> particles;
     };

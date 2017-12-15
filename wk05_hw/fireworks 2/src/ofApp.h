@@ -12,7 +12,8 @@
         
         // let's make a vector of them
         vector <particle> particles;
-        ofImage night; 
+        ofImage night;
+        
     };
 
 		

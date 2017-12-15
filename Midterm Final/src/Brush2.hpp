@@ -1,7 +1,8 @@
 #pragma once
 #include "ofMain.h"
+#include "Brush1.hpp"
 
-class Brush2
+class Brush2 : public Brush1
 {
 public:
     

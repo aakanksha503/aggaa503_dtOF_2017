@@ -38,7 +38,7 @@ void ofApp::update(){
         particles[i].resetForce();
        
         particles[i].addDampingForce();
-        particles[i].addForce(0, 0.1/i+0.3);
+        particles[i].addForce(0, 0.1/i+0.09);
         
          // gravity
       
@@ -64,8 +64,8 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
     for (int i = 0; i < particles.size(); i++){
-        float vx = ofRandom(-10,10);
-        float vy = ofRandom(-10,10);
+        float vx = ofRandom(-5,5);
+        float vy = ofRandom(-5,5);
         particles[i].setInitialCondition(mouseX,mouseY,vx, vy);	
     }
 }

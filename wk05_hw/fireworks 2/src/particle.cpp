@@ -12,7 +12,7 @@
 //------------------------------------------------------------
 particle::particle(){
     setInitialCondition(0,0,0,0);
-    damping =  ofRandom(1, 10);
+    damping =  ofRandom(10, 15);
 
 }
 
@@ -38,7 +38,7 @@ void particle::addDampingForce(){
     // velocity vector
     
     frc.x = frc.x - vel.x * damping;
-    frc.y = 2* frc.y - vel.y * damping;
+    frc.y = 10*frc.y - vel.y * damping;
 }
 
 //------------------------------------------------------------
@@ -57,5 +57,5 @@ void particle::update(){
 //------------------------------------------------------------
 void particle::draw(){
     ofSetColor(r,g,b,alpha);
-    ofDrawCircle(pos.x, pos.y, ofRandom(0,2));
+    ofDrawCircle(pos.x, pos.y, ofRandom(0,0.8));
 }

@@ -28,7 +28,8 @@ class ofApp : public ofBaseApp{
         ofImage image;
         ofImage cross;
         ofEasyCam cam;
-        ofPoint pts[MAX_PTS];
+//        ofPoint pts[MAX_PTS];
+    ofPolyline pts;
         int nPts;
 
     

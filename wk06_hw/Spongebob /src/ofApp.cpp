@@ -43,12 +43,13 @@ void ofApp::draw(){
     
     ofSetColor(200, 180, 190, 255);
     
-    if (nPts >1){
-        for (int i=0; i< nPts - 1; i++){
-        ofLine(pts[i].x, pts[i].y, pts[i+1].x, pts[i+1].y);
-        }
-        
-    }
+//    if (nPts >1){
+//        for (int i=0; i< nPts - 1; i++){
+//        ofDrawLine(pts[i].x, pts[i].y, pts[i+1].x, pts[i+1].y);
+//        }
+//        
+//    }
+    pts.draw();
     
     ofPopMatrix();
     
@@ -101,11 +102,15 @@ void ofApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-    if (nPts < MAX_PTS){
-        pts[nPts].x = x;
-        pts[nPts].y = y;
-        nPts ++;
+    if (pts.size() < MAX_PTS)
+    {
+        pts.addVertex(ofVec2f(x,y));
     }
+//    if (nPts < MAX_PTS){
+//        pts[nPts].x = x;
+//        pts[nPts].y = y;
+//        nPts ++;
+//    }
 }
 
 //--------------------------------------------------------------

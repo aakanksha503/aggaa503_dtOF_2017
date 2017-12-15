@@ -1,0 +1,14 @@
+The Memory Mixer 
+
+Aakanksha Aggarwal 
+
+My project is an artistic representation of the way memories are formed, how they evolve, fragment and ultimately decay. I am interested in using code to create interesting patterns and generative art. I am inspired by how minimal code can create such beautiful experiences.
+
+Use of code:
+ofxSerial to connect Arduino to openFrameworks
+ofxGui to display parameters onscreen for easy control
+Shaders in the GLSL language to manipulate all the pixels simultaneously 
+
+
+
+
